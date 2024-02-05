@@ -32,14 +32,17 @@ const residensPart = location && location.residents.slice(first, second);
 const totalPages = location && Math.floor(location.residents.length / quantity) + 1;
 
   return (
-    
+    <>
+    <div className='img'>
+      
+    </div>
     <div className='app'>
       {
         isLoading ?
         <h2>Loading...</h2>
         :
         <>
-        <h1>Rick and Morty</h1>
+        {/* <h1>Rick and Morty</h1> */}
       <form
        onSubmit={handleSubmit}
        className='app__form'
@@ -83,6 +86,7 @@ const totalPages = location && Math.floor(location.residents.length / quantity) 
       }
       
     </div>
+    </>
   )
 }
 
