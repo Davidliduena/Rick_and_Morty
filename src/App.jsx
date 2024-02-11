@@ -54,7 +54,7 @@ const totalPages = location && Math.floor(location.residents.length / quantity) 
       </form>
       {
         hasError || finder === '0'? //manejo de errores
-        <h2>This location do no exist</h2>
+        <h2>This location does no exist</h2>
         :
         <> 
         <LocationCard 
